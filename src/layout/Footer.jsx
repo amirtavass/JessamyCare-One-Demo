@@ -57,8 +57,8 @@ function Footer() {
         {/* Copyright */}
         <div className="mt-10 pt-6 border-t border-purple-400 text-center">
           <p className="text-sm text-white">
-            © {new Date().getFullYear()} Jessamy Staffing Solutions. All rights
-            reserved.
+            © {new Date().getFullYear()} Centre Of Intellignece Of Things
+            (CIOTH). All rights reserved.
           </p>
         </div>
       </div>
