@@ -5,7 +5,7 @@ function AppLayout({ children }) {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <main className="flex-1 bg-purple-300">{children}</main>
+      <main className="flex-1 bg-slate-200">{children}</main>
       <Footer />
     </div>
   );
