@@ -1,9 +1,8 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
-}
+} */
 
 .logo {
   height: 6em;
@@ -39,4 +38,41 @@
 
 .read-the-docs {
   color: #888;
+}
+.tab-button {
+  position: relative;
+}
+.tab-button::before,
+.tab-button::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  height: 4px;
+  background-color: #d1d5db; /* gray-300 - default color */
+  width: 50%;
+  transition: all 0.6s ease;
+  z-index: 10;
+}
+.tab-button::before {
+  left: 0px;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.tab-button::after {
+  right: 0px;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+/* Hover effect - lines grow from both edges to center */
+.tab-button:hover::before,
+.tab-button:hover::after {
+  background-color: #62247c; /* jessamy-purple */
+  transform: scaleX(1);
+}
+
+/* Active state - full purple line */
+.tab-button.active::before,
+.tab-button.active::after {
+  background-color: #62247c;
+  transform: scaleX(1);
 }
